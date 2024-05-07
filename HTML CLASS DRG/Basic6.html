@@ -1,0 +1,168 @@
+<!-- Tables -->
+
+<!-- Basic Table Structure -->
+<!-- tags of table -->
+
+<!-- The <table> element is used to create a table. The contents 
+of the table are written out row by row. -->
+
+<!-- You indicate the start of each row using the opening <tr> tag. 
+ (The tr stands for table row.) It is followed by one or more <td> elements (one for each cell 
+ in that row). At the end of the row you use a closing </tr> tag. -->
+
+<!-- Each cell of a table is represented using a <td> element. (The td stands for table data.)
+At the end of each cell you use a closing </td> tag. -->
+
+<table>
+  <tr>
+    <td>15</td>
+    <td>15</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>60</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>90</td>
+    <td>90</td>
+  </tr>
+</table>
+
+<hr />
+
+<!-- table headings -->
+<!-- The <th> element is used just like the <td> element but its 
+    purpose is to represent the heading for either a column or 
+    a row. (The th stands for table heading.)  -->
+
+<!-- Even if a cell has no content, you should still use a <td> or <th> element to represent 
+    the presence of an empty cell otherwise the table will not render correctly. (The first cell 
+    in the first row of this example  shows an empty cell.) -->
+
+<!-- Using <th> elements for headings helps people who use screen readers, improves 
+    the ability for search engines to index your pages, and also enables you to control the 
+    appearance of tables better when you start to use CSS. -->
+
+<!-- You can use the scope attribute on the <th> element to indicate 
+    whether it is a heading for a column or a row. It can take the values: row to indicate a heading 
+    for a row or col to indicate a heading for a column.Browsers usually display the 
+    content of a <th> element in bold and in the middle of the cell. -->
+
+<table>
+  <tr>
+    <th></th>
+    <th scope="col">Saturday</th>
+    <th scope="col">Sunday</th>
+  </tr>
+  <tr>
+    <th scope="row">Tickets sold:</th>
+    <td>120</td>
+    <td>135</td>
+  </tr>
+  <tr>
+    <th scope="row">Total sales:</th>
+    <td>$600</td>
+    <td>$675</td>
+  </tr>
+</table>
+
+<hr />
+
+<!-- Spanning ColumnS -->
+
+<!-- use colspan and give number of colums to span  -->
+<table>
+  <tr>
+    <th></th>
+    <th>9am</th>
+    <th>10am</th>
+    <th>11am</th>
+    <th>12am</th>
+  </tr>
+  <tr>
+    <th>Monday</th>
+    <td colspan="2">Geography</td>
+    <td>Math</td>
+    <td>Art</td>
+  </tr>
+  <tr>
+    <th>Tuesday</th>
+    <td colspan="3">Gym</td>
+    <td>Home Ec</td>
+  </tr>
+</table>
+
+<hr />
+
+<!-- Spanning Rows -->
+<!-- use rowspan and give number of colums to span  -->
+<!-- see how if the rowspan is 2 in next row we dont write the data at that place -->
+<table border="2">
+  <tr>
+    <th></th>
+    <th>ABC</th>
+    <th>BBC</th>
+    <th>CNN</th>
+  </tr>
+  <tr>
+    <th>6pm - 7pm</th>
+    <td rowspan="2">Movie</td>
+    <td>Comedy</td>
+    <td>News</td>
+  </tr>
+  <tr>
+    <th>7pm - 8pm</th>
+    <td>Sport</td>
+    <td>Current Affairs</td>
+  </tr>
+</table>
+<hr />
+
+<!-- Long Tables -->
+
+<!-- The headings of the table should sit inside the <thead> element.  -->
+
+<!-- The body should sit inside the <tbody> element.  -->
+
+<!-- The footer belongs inside the <tfoot> element -->
+
+<table  border="2" bgcolor="#efefef">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Income</th>
+      <th>Expenditure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1st January</th>
+      <td>250</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>2nd January</th>
+      <td>285</td>
+      <td>48</td>
+    </tr>
+    <!-- additional rows as above -->
+    <tr>
+      <th>31st January</th>
+      <td>129</td>
+      <td>64</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td>7824</td>
+      <td>1241</td>
+    </tr>
+  </tfoot>
+</table>
+<hr>
+
+

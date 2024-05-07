@@ -1,0 +1,58 @@
+<!--  Video & Audio page 207 onwards -->
+
+<!-- Adding Video to Your Pages -->
+
+<!-- The <video> element has a number of attributes which allow you to control video playback: -->
+<!-- src : This attribute specifies the path to the video. 
+
+    poster : This attribute allows you to specify an image to show while the video is downloading or until 
+    the user tells the video to play.
+
+    width, height :These attributes specify the size of the player in pixels.
+
+    controls : When used, this attribute indicates that the browser should supply its own controls 
+    for playback.
+
+    autoplay : When used, this attribute specifies that the file should play automatically.
+
+    loop : When used, this attribute indicates that the video should start playing again once it has 
+    ended.
+
+    HTML5: Adding Video to Your PagesIn HTML5 you do not need to 
+    supply values for all attributes, such as the controls, autoplay, 
+    and loop attributes used with the <video> element. 
+
+    These attributes are like on/off switches. If the attribute is present, it turns that option on. 
+    If the attribute is omitted, the option is turned off. 
+
+    If the browser does not  the <video> element or the format of video used, 
+    it will display whatever is between the opening <video>and closing </video> tags.
+
+    preload :This attribute tells the browser what to do when the page loads.
+     It can have one of three 
+    values: 
+    none -> The browser should not load the video until the user presses play.
+    auto -> The browser should download the video when the page loads.
+    metadata ->The browser should just collect information such as the size, first frame,
+    track list, and duration -->
+
+<video
+  poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGEPYbtAE0yNTWZ05r0EbnLCdftRnA1qbvKuBOH9jRw&s"
+  width="400"
+  height="300"
+  preload
+  controls
+  loop
+>
+  <source src="video feeding.mp4" />
+  <p>A animal feeding from hands</p>
+</video>
+
+<hr />
+
+<!-- Adding HTML5 Audio to Your Pages -->
+<!-- mostly things are same like for videos just here its audio tag insteda of video -->
+<audio controls autoplay>
+  <source src="itachi.mp3" />
+  <p>This browser does not support our audio format.</p>
+</audio>

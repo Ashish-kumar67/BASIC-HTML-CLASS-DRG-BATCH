@@ -1,0 +1,142 @@
+<!-- Extra Markup -->
+
+<!-- ID Attribute : more like roll number of student unique for each student  -->
+
+<!-- Every HTML element can carry the id attribute. It is used to uniquely identify that element 
+from other elements on the page. Its value should start with 
+a letter or an underscore (not a number or any other character).
+It is important that no two elements on the same page have the same value for their id
+attributes (otherwise the value is no longer unique) -->
+<p id="pullquote">para with id</p>
+<p>para with no id</p>
+
+<hr />
+
+<!-- class attribute -> like real class multiple student can be part of it  -->
+
+<!-- Sometimes, rather than uniquely identifying one element within a document, you will want a 
+way to identify several elements as being different from the other elements on the page. -->
+
+<!-- we can include a element to mulyiple classes seperated by space -->
+
+<p class="important">para with class = important</p>
+<p>para with no calss</p>
+<p class="important good">para with class = important and good</p>
+
+<hr />
+
+<!-- Block Elements -->
+<!-- takes new line every time -->
+<!-- Examples of block elements are <h1>, <p>, <ul>, and <li>. -->
+<h1>heading</h1>
+<p>para</p>
+<ul>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li>list item 3</li>
+  <li>list item 4</li>
+</ul>
+
+<hr />
+
+<!-- Inline elements -->
+
+<!-- Some elements will always appear to continue on the same line as their neighbouring elements.
+These are known as inline elements. -->
+<!-- Examples of inline elements are <a>, <b>, <em>, and <img> -->
+
+random things <em> em tag </em> again random things and <b> bold tag </b>.
+
+<hr />
+
+<!-- Grouping Text & Elements In a Block -->
+
+<!-- The <div> element allows you to group a set of elements together in one block-level box -->
+<!-- then we can style this box seperately -->
+<div id="header">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="biography.html">Biography</a></li>
+    <li><a href="works.html">Works</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+<hr />
+
+<!-- Grouping Text & Elements Inline -->
+
+<!-- The <span> element acts like an inline equivalent of the <div>element.
+
+It is used to either:
+1. Contain a section of text where there is no other suitable element to differentiate
+   it from its surrounding text.
+
+2. Contain a number of inline elements The most common reason why people use <span> elements 
+  is so that they can control the appearance of the content of these elements using CSS. -->
+
+<p>para starts <span class="gallery"> span comes </span> para ends</p>
+
+<hr />
+
+<!-- IFrames -->
+<!-- An iframe is like a little window that has been cut into your page — and in that window you 
+can see another page. The term iframe is an abbreviation of inline frame. -->
+
+<!-- One common use of iframes (that you may have seen on various websites) is to embed a Google Map
+into a page -->
+
+<!-- src: Specifies the URL of the webpage to be displayed within the iframe.
+
+width: Sets the width of the iframe window.
+
+height: Sets the height of the iframe window.
+
+frameborder: Specifies whether or not to display a border around the iframe. 
+            A value of "0" means no border.
+            
+scrolling: Specifies whether or not to display scrollbars within the iframe
+           if the content is larger than the iframe window. "no" disables scrolling.
+
+title: Provides a title for the iframe, which can be useful for accessibility and SEO purposes.
+
+allow: Allows certain permissions for the embedded content, such as autoplay, fullscreen, etc.
+
+allowfullscreen: Allows the iframe content to be displayed in fullscreen mode.
+
+referrerpolicy: Specifies how the browser should send the Referer HTTP header
+                 when navigating to the iframe content from a different origin. -->
+
+<iframe
+  src="http://maps.google.co.uk/maps?q=moma+new+york
+&amp;output=embed"
+  width="450"
+  height="350"
+  frameborder="0"
+  scrolling="no"
+>
+</iframe>
+
+<br>
+<br>
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/gnSt82HxmMc?si=JWgkJ8etP_vwVMVT"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
+
+<hr>
+
+<!-- Meta tag -> for search optimizations to provide info about webpage -->
+
+<!-- escape characters -> There are some characters that are used in 
+and reserved by HTML code. -->
+
+
+<p>&copy; The Art Bookshop</p> 
+
+<hr>
